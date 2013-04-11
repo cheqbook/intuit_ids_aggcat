@@ -1,0 +1,7 @@
+*.gem
+*.key
+.bundle
+Gemfile.lock
+pkg/*
+spec/config/real_config.yml
+spec/config/real_cert.key

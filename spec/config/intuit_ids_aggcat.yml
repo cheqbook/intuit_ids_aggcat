@@ -1,0 +1,5 @@
+development:
+  certificate_path: test.key
+  issuer_id: rails_test_id
+  oauth_consumer_key: rails_test_key
+  oauth_consumer_secret: rails_test_secret
