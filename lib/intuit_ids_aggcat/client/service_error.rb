@@ -37,6 +37,10 @@ module IntuitIdsAggcat
         false
       end
 
+      def account_locked?
+        error_code == "103"
+      end
+
       def error?
         true
       end
