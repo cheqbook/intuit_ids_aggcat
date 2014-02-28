@@ -291,6 +291,7 @@ module IntuitIdsAggcat
     numeric_node :interest_prior_amount_ytd, "interestPriorAmountYtd", :default_value => nil
     date_time_node :maturity_date, "maturityDate", :default_value => nil
     numeric_node :maturity_amount, "maturityAmount", :default_value => nil
+    numeric_node :aggr_status_code, "aggrStatusCode", :default_value => nil
   end
 
   class OtherAccount < Account
@@ -320,6 +321,7 @@ module IntuitIdsAggcat
     date_time_node :loan_start_date, "loanStartDate", :default_value => nil
     numeric_node :current_loan_balance, "currentLoanBalance", :default_value => nil
     numeric_node :loan_rate, "loanRate", :default_value => nil
+    numeric_node :aggr_status_code, "aggrStatusCode", :default_value => nil
 
   end
 
@@ -378,6 +380,7 @@ module IntuitIdsAggcat
     text_node :interest_rate_type, "interestRateType", :default_value => nil
     text_node :loan_payment_type, "loanPaymentType", :default_value => nil
     numeric_node :remainingPayments, "remainingPayments", :default_value => nil
+    numeric_node :aggr_status_code, "aggrStatusCode", :default_value => nil
 
   end
 
@@ -404,6 +407,7 @@ module IntuitIdsAggcat
     date_time_node :last_payment_date, "lastPaymentDate", :default_value => nil
     numeric_node :statement_close_balance, "statementCloseBalance", :default_value => nil
     numeric_node :statement_last_fee_amount, "statementLastFeeAmount", :default_value => nil
+    numeric_node :aggr_status_code, "aggrStatusCode", :default_value => nil
   end
 
   class Common
