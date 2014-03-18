@@ -141,8 +141,8 @@ module IntuitIdsAggcat
           credentials_array = []
           creds_hash.each do |k, v|
             c = Credential.new
-            c.name = k
-            c.value = v
+            c.name = k.html_safe
+            c.value = v.html_safe
             credentials_array.push c
           end
           creds = Credentials.new
@@ -289,8 +289,8 @@ module IntuitIdsAggcat
             credentials_array = []
             creds_hash.each do |k, v|
               c = Credential.new
-              c.name = k
-              c.value = v
+              c.name = k.html_safe
+              c.value = v.html_safe
               credentials_array.push c
             end
             creds = Credentials.new
