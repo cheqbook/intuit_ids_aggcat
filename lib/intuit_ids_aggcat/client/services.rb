@@ -141,8 +141,8 @@ module IntuitIdsAggcat
           credentials_array = []
           creds_hash.each do |k, v|
             c = Credential.new
-            c.name = k.html_safe
-            c.value = v.html_safe
+            c.name = k
+            c.value = v
             credentials_array.push c
           end
           creds = Credentials.new
@@ -289,8 +289,8 @@ module IntuitIdsAggcat
             credentials_array = []
             creds_hash.each do |k, v|
               c = Credential.new
-              c.name = k.html_safe
-              c.value = v.html_safe
+              c.name = k
+              c.value = v
               credentials_array.push c
             end
             creds = Credentials.new
@@ -557,7 +557,7 @@ module IntuitIdsAggcat
           data_string = args.join("\n")
           data_string = data_string.gsub(/<v11[^>]*>.+<\/v11[^>]*>/, 'HIDDEN_CHALLENGE_RESPONSES ')
           data_string = data_string.gsub(/<challenge>.+<\/challenge>/, 'HIDDEN_CHALLENGES ')
-          #data_string = data_string.gsub(/<credential>.+<\/credential>/, 'HIDDEN_CREDENTIALS ')
+          data_string = data_string.gsub(/<credential>.+<\/credential>/, 'HIDDEN_CREDENTIALS ')
 
           puts data_string if !data_string.blank?
         end
